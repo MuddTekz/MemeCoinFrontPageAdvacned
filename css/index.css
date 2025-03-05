@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffefd5;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #f4f4f4;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.3s ease; /* Smooth transition for background and padding */
+    border-bottom: 2px solid rgb(0, 128, 255);
+}
+
+/* Shrunk Navbar Style */
+.navbar.shrunk {
+    padding: 10px 5%; /* Smaller padding when scrolled */
+    background-color: #f4f4f4c6;
+}
+
+/* Logo */
+.logo img {
+    margin-left: 60%;
+    height: 55px;
+    transition: height 0.3s ease; /* Smooth transition for logo size */
+}
+
+/* Shrunk Logo Style */
+.navbar.shrunk .logo img {
+    height: 40px; /* Shrink logo when scrolling */
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    margin-right: 18%;
+    gap: 25px;
+}
+
+/* Shrunk Nav Links */
+.navbar.shrunk .nav-links li {
+    font-size: 16px; /* Shrink text on scroll */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1686cb;
+    font-size: 20px;
+    font-family: "Bangers", serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #157dbef9;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+
+/* CSS */
+.buy-btn {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-variation-settings:
+      "wdth" 100;
+    margin-right: 10%;
+  background-color: #1686cb;
+  border: 2px solid #333;
+  border-radius: 30px;
+  box-shadow: #333 4px 4px 0 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 15px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: transform 0.2s;
+}
+
+.buy-btn:hover {
+  background-color: #1686cbe4;
+}
+
+.buy-btn:active {
+  box-shadow: #333 2px 2px 0 0;
+  transform: translate(1px, 1px);
+}
+
+@media (min-width: 768px) {
+  .buy-btn {
+    min-width: 100px;
+    padding: 0 20px;
+  }
+}
+
+.buy-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px;
+    background: url('https://img.freepik.com/free-vector/hand-drawn-galaxy-background_52683-143158.jpg?t=st=1741032618~exp=1741036218~hmac=4428f79841131261097bee163d33933c675563e96bc53f7be9df2b5e83a6a892&w=1380') no-repeat center center/cover;
+    color: #333;
+}
+
+.hero-title {
+    font-family: "Bangers", serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero-text {
+    font-family: "Bangers", serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* CSS */
+.button {
+  background-color: #0a6bff;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+  line-height: 24px;
+  margin: 0;
+  min-height: 50px;
+  min-width: 80px;
+  padding: 10px 15px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.button:hover {
+  background-color: #065dd8;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+    .button {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}
+
+
+.hero-buttons {
+    gap: 20px;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.shibaIllustration {
+    margin-top: -300px;
+    margin-right: 50px;
+    float: right;
+}
+
+.shibaSpace {
+    width: 430px;
+    height: 430px;
+}
+
+.secondary {
+    background-color: #3498db;
+}
+
+/* Cards Section */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      background-color: #3498db;
+    border-radius: 15px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: rgba(0, 128, 255, 0.608) 5px 5px, rgba(0, 128, 255, 0.438) 10px 10px, rgba(0, 128, 255, 0.389) 15px 15px, rgba(0, 128, 255, 0.241) 20px 20px, rgba(0, 128, 255, 0.088) 25px 25px;
+    transition: transform 0.3s;
+}
+
+.card h3 {
+    color: #333;
+}
+
+.card p {
+    color: white;
+}
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
